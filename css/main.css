@@ -1,0 +1,77 @@
+div.messageBox {
+  width: 100%;
+  
+}
+div.status {
+  font-size: 18px;
+  font-family:monospace;
+}
+
+section.cams {
+  margin: 1em;
+}
+
+textarea.message {
+  width: 400px;
+  height: 400px;
+  height: 5em;
+  resize: none;
+  display: block;
+  border: 2px solid rgb(250, 190, 190);
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  margin: 1em;
+}
+
+label {
+  font-weight: 400;
+}
+
+
+
+button {
+    margin: 5px 20px 20px 10px;
+    width: 83px;
+  }
+  
+  button#leaveChat {
+      margin: 0;
+  }
+  
+  video {
+    --width: 45%;
+    width: var(--width);
+    height: calc(var(--width) * 0.75);
+    margin: 0 0 20px 0;
+    vertical-align: top;
+    border: 2px solid rgb(250, 190, 190);
+  border-radius: 4px;
+  background-color: #a5a5a5;
+  box-sizing: border-box;
+  }
+  
+  video#localVideo {
+    margin: 0 20px 20px 0;
+  }
+  
+  div.box {
+    margin: 1em;
+  }
+  
+  @media screen and (max-width: 400px) {
+    button {
+      width: 83px;
+      margin: 0 11px 10px 0;
+    }
+  
+    video {
+      height: 90px;
+      margin: 0 0 10px 0;
+      width: calc(50% - 7px);
+    }
+    video#localVideo {
+      margin: 0 10px 20px 0;
+    }
+  
+  }

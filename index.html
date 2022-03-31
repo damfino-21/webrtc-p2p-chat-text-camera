@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+ *  was helped a lot by https://github.com/webrtc/samples/blob/gh-pages/src/content/peerconnection/channel/index.html
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-2-P for Tabs Demo with Messaging</title>
+
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="js/main.js" async></script>
+
+    <script src="../../../js/lib/ga.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>P2P Text Messaging</h1>
+        <p>Click the start button in any of the two tabs (of the same browser) to establish a chat between them</p>
+        <section class="cams">
+            <video id="localVideo" playsinline autoplay muted></video>
+            <video id="remoteVideo" playsinline autoplay></video>
+
+        </section>
+        <section>
+            <p>The videos will be shown above once you press the ready button.</p>
+            <div>
+                <button id="startTexting">Ready to Connect</button>
+                <button id="leaveChat">Disconnect from Chat</button>
+            </div>
+
+            <div class="messageBox">
+                <label for="incomingMessages">Chat:</label>
+                <textarea class="message" id="incomingMessages" disabled></textarea>
+            </div>
+
+            <div class="messageBox">
+
+                <label for="userMessageBox">Send:</label>
+                <textarea class="message" id="userMessageBox" placeholder="Please write your message here"></textarea>
+            </div>
+
+            <button id="localSend">Send</button>
+            <div class="status">
+                <p><strong>Peer Role:</strong></p>
+                <p id="roleOfPeer"> Role. </p>
+            </div>
+
+
+        </section>
+    </div>
+</body>
+
+</html>
