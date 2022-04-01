@@ -1,4 +1,4 @@
-## Simple WebRTC Project to Learn P2P "Texting" through DataChannel
+## Simple WebRTC Project with P2P "Texting" through DataChannel and Video Chat
 
 This is something I did to learn webrtc, and I tried to follow the same logical structure as that of the [samples](https://webrtc.github.io/samples/) listed in the webrtc official website.
 
